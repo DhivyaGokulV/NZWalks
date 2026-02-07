@@ -29,6 +29,7 @@ namespace NZWalks.API
                 }, typeof(AutoMapperProfiles).Assembly
             );
             builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
+            builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
